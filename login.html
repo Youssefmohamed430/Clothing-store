@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="icon" type="image/x-icon" href="../img/Logoclothing.png">
+    <!-- theme-1 css file -->
+    <link rel="stylesheet" href="../css/login-theme-1.css" id="theme1">
+    <!-- theme-2 css file -->
+    <link rel="stylesheet" href="../css/login-theme-2.css" disabled id="theme2">
+    <!-- Normalize css file -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- A Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;
+    0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,
+    300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- An Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!-- nav-bar -->
+    <nav>
+        <img src="../img/Logoclothing.png">
+        <div class="links">
+            <a href="#HOME" target="_blank">HOME</a>
+            <a href="#ABOUT" target="_blank">ABOUT</a>
+            <a href="#CATEGORIES" target="_blank">CATEGORIES</a>
+            <button class="arrow" id="arrow"><i class='bx bx-down-arrow'></i></button>
+            <div class="dropmenu" id="list">
+                <ul>
+                    <li><a href="" target="_blank">Men's clothing</a></li>
+                    <li>Women's clothing</li>
+                    <li>children's clothes</li>
+                    <li>sports clothing</li>
+                </ul>
+            </div>
+            <a href="#CONTACT" target="_blank" class="contact">CONTACT</a>
+        </div>
+        <button id="replace" class="replace">
+            <i class='bx bxs-sun' id="icon1"></i> 
+            <i class='bx bxs-moon' id="icon2"></i>
+        </button>
+        <input type="search" class="search" placeholder="search here">
+        <button class="searchbutton">
+            <i class='bx bx-search-alt-2'></i>
+        </button>
+    </nav> 
+    <!------------- form log in ------------------>
+    <div class="parent"> <!-- start parent -->
+        <!-- text with js -->
+        <div class="child-1">
+            <p id="hello-text"></p>
+            <img src="../img/Logoclothing.png">
+        </div>
+        <!-- form -->
+        <div class="child-2"> <!-- start login -->
+            <h1><i class='bx bxs-user-circle' id="user-circle"></i></h1>
+            <form name="myForm" onsubmit="return validateForm()" id="loginForm">
+                <div>
+                    <input type="text"  id="User" placeholder="User name" name="username" oninput="upperCase()">
+                    <i class='bx bxs-user' id="user"></i>
+                </div>
+                <div>
+                    <input type="password" id="pass" placeholder="Password" name="pass">
+                    <i class='bx bxs-lock-alt' id="lock"></i>
+                </div>
+                <div>
+                    </div>
+                    <button type="submit"class="log-in">Log in</button>
+                    <button class="for"><a href="#forget" target="_blank" class="anchor">Forget password?</a></button>
+                </form>
+            </div><!-- end login -->
+            <div class="another">
+                <p>Don't have an account ? <a href="#Sign up" target="_blank">Sign up</a></p>
+            </div>
+        </div> <!-- end parent -->
+    </div>
+        <!-- Start Footer -->
+        <footer>
+            <div class="container">
+                <div class="box">
+                    <h3>Clothing Store</h3>
+                    <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                        <i class="bx bxl-facebook-square social-icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                        <i class="bx bxl-twitter social-icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                        <i class="bx bxl-youtube social-icon"></i>
+                        </a>
+                    </li>
+                    </ul>
+                    <p class="text">
+                    Create an online video course, reach students across the globe, and
+                    earn money.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="line">
+                    <div class="info">
+                        Egypt, Giza, Inside The Sphinx, Room Number 220
+                    </div>
+                    </div>
+                    <div class="line">
+                    <div class="info">Business Hours: From 10:00 To 18:00</div>
+                    </div>
+                    <div class="line">
+                    <div class="info">
+                        <span><b>Call Us:</b></span>
+                        <span>+20123456789</span>
+                        <span>+20198765432</span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <p class="copyright">Made With &copy; By Metobus</p>
+                </footer> 
+            <!-- end footer -->
+    <script src="../js/login.js"></script>
+</body>
+</html>
