@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="css/profilestyle.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jomhuria&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="script" href="">
+</head>
+<body>
+
+    <header>
+        <div class="left-section">
+            <div class="header-logo">
+                <a href=""><img src="images/Logo white.png" alt=""></a>
+            </div>
+        </div>
+        <div class="nav_bar">
+            <ul class="navigation">
+            <li class="parent"><a class="link" href="">Home</a></li>
+            <li class="parent"><a class="link" href="">About</a></li>
+            <li class="parent" id="clients">
+                <a class="link" href="">Categories<i class="fas fa-sort-down down-arrow"></i></a>
+            </li>
+            <li class="parent"><a class="link" href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="mid-section">
+            <form>
+                <span class="material-icons">search</span>
+                <input type="search" placeholder="Search for anything"/>
+
+            </form>
+        </div>
+        <div class="right-section">
+            <img id="dark_mode_icon" src="images/moon.png" alt="">
+            <a href=""><img class="header-avatar" src="images/avatar.png" alt=""></a>
+        </div>
+
+
+
+
+
+
+    </header>
+
+    <div class="profile-page">
+        <div class="overview">
+            <div class="avatar-box">
+                <img class="profile-avatar" src="images/avatar.png" alt="">
+                <h3 class="name-under-avatar">Youssef</h3>
+                <h5 class="level">Welcome Back!</h5>
+            </div>
+            <div class="info-box">
+                <div class="box1">
+                    <h4 class="gen-info">General Information</h4>
+                    <form method="post" target="_blank">
+                        <div>
+                            <span class="bold-info">Full Name:</span>
+                            <input type="text" class="small-info" value="Youssef Islam" required>
+                        </div>
+                        <div>
+                            <span class="bold-info">Gender:</span>
+                            <input list="genders" class="small-info" value="Male" required>
+                            <datalist id="genders">
+                                <option value="Male"></option>
+                                <option value="Female"></option>
+                            </datalist>
+                        </div>
+                        <div>
+                            <span class="bold-info">Country:</span>
+                            <input type="text" class="small-info" value="Egypt" required>
+                        </div>
+                        <div class="submit-button">
+                            <input type="submit" class="edit-info" value="Update Information">
+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="box2">
+                    <h4 class="gen-info">Personal Information</h4>
+                    <form method="post" target="_blank">
+                        <div>
+                            <span class="bold-info">Email:</span>
+                            <input type="email" class="small-info" value="yi@nn.com" required>
+                        </div>
+                        <div>
+                            <span class="bold-info">Phone:</span>
+                            <input type="text" class="small-info" value="01741258852" required>
+                        </div>
+                        <div>
+                            <span class="bold-info">Date Of Birth:</span>
+                            <input type="date" class="small-info" value="2006-01-01" required>
+                        </div>
+                        <div class="submit-button">
+                            <input type="submit" class="edit-info" value="Update Information">
+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="box3">
+                    <h4 class="gen-info">Address Information</h4>
+                    <form method="post" target="_blank">
+                        <div>
+                            <span class="bold-info">Address:</span>
+                            <input type="text" class="small-info" value="Building 6, 4th floor, Apartement 3" required>
+                        </div>
+                        <div>
+                            <span class="bold-info">State/Region:</span>
+                            <input type="text" class="small-info" value="Zahraa Elmaadi" required>
+                        </div>
+                        <div>
+                            <span class="bold-info">City:</span>
+                            <input type="text" class="small-info" value="Cairo" required>
+                        </div>
+                        <div class="submit-button">
+                            <input type="submit" class="edit-info" value="Update Information">
+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="box4">
+                    <h4 class="gen-info">Billing Information</h4>
+                    <form method="post" target="_blank">
+                        <div>
+                            <span class="bold-info">Payment Method:</span>
+                            <input type="text" class="small-info" value="Visa" required>
+                        </div>
+                        <div>
+                            <span class="bold-info">Email:</span>
+                            <input type="email" class="small-info" value="email@website.com" required>
+                        </div>
+                        <div>
+                            <span class="bold-info">Credit:</span>
+                            <input type="text" class="small-info" value="$3600" readonly>
+                        </div>
+                        <div class="submit-button">
+                            <input type="submit" class="edit-info" value="Update Information">
+
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="other-data">
+            <div class="orders">
+                <h2>Your Orders</h2>
+                <p>Manage your Orders</p>
+                <ul class="orders-list">
+                    <!-- <li><span class="skill">HTML</span><span class="skill">JavaSCript</span><span class="skill">CSS</span></li> -->
+                    <!-- <li><span class="skill"d>Engliah</span><span class="skill">Arabic</span><span class="skill">Spanish</span></li>-->
+                    <!-- <li><span class="skill">Effiency</span><span class="skill">TeamWorker</span></li> -->
+                    <h3 class="order-type">Ongoing Orders:</h3>
+                        <div class="order">
+                            <div class="order-info">
+                                <span class="order-bold-info">Order no.:</span>
+                                <p class="order-small-info"> 862682274 </p>
+                                <span class="order-bold-info">Order Date:</span>
+                                <p class="order-small-info"> 06 Nov, 2024</p>
+                            </div>
+                            <div class="product">
+                                <img src="images/hoodie2.jpg" alt="">
+                                <div class="product-disc">
+                                    <span class="product-name">Grey Hoodie</span>
+                                    <span class="product-arrival">Estimated Arrival: In two days</span>
+                                </div>
+                                <div class="price">
+                                    <span class="quantity-title">Price:</span><span class="quantity-no">400 LE</span>
+                                </div>
+                                <div class="quantity">
+                                    <span class="quantity-title">Quantity:</span><span class="quantity-no">1</span>
+                                </div>
+
+                            </div>
+                            <div class="product">
+                                <img src="images/jeans.jpg" alt="">
+                                <div class="product-disc">
+                                    <span class="product-name">Blue Jeans</span>
+                                    <span class="product-arrival">Estimated Arrival: In three days</span>
+                                </div>
+                                <div class="price">
+                                    <span class="quantity-title">Price:</span><span class="quantity-no">500 LE</span>
+                                </div>
+                                <div class="quantity">
+                                    <span class="quantity-title">Quantity:</span><span class="quantity-no">2</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    <h3 class="order-type">Arrived Orders:</h3>
+                    <div class="order">
+                        <div class="order-info">
+                            <span class="order-bold-info">Order no.:</span>
+                            <p class="order-small-info"> 741571163 </p>
+                            <span class="order-bold-info">Order Date:</span>
+                            <p class="order-small-info"> 02 Oct, 2024</p>
+                        </div>
+                        <div class="product">
+                            <img src="images/glasses.jpg" alt="">
+                            <div class="product-disc">
+                                <span class="product-name">Black Sunglasses</span>
+                                <span class="product-arrival">Arrived: 1 Month Ago</span>
+                            </div>
+                            <div class="price">
+                                <span class="quantity-title">Price:</span><span class="quantity-no">200 LE</span>
+                            </div>
+                            <div class="quantity">
+                                <span class="quantity-title">Quantity:</span><span class="quantity-no">1</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <h3 class="order-type">Cancelled Orders:</h3>
+                    <div class="order">
+                        <p class="empty-msg">You have no cancelled orders!</p>
+                    </div>
+                </ul>
+            </div>
+            <div class="wishlist">
+                <h2>Your Wishlist</h2>
+                <p>Products you've loved</p>
+                <div class="order">
+                    <div class="product-wishlist">
+                        <img src="images/jacket.jpg" alt="">
+                        <div class="product-disc">
+                            <span class="product-name">Black Jacket</span>
+                        </div>
+                        <div class="price">
+                            <span class="quantity-title">Price:</span><span class="quantity-no">1100 LE</span>
+                        </div>
+                        <div class="remove-from-wishlist">
+                            <button class="rfw-button">Remove from wishlist</button>
+                        </div>
+
+                    </div>
+                    <div class="product-wishlist">
+                        <img src="images/sneakers.jpg" alt="">
+                        <div class="product-disc">
+                            <span class="product-name">Nike Shoes</span>
+                        </div>
+                        <div class="price">
+                            <span class="quantity-title">Price:</span><span class="quantity-no">300 LE</span>
+                        </div>
+                        <div class="remove-from-wishlist">
+                            <button class="rfw-button">Remove from wishlist</button>
+                        </div>
+
+                    </div>
+                    <div class="product-wishlist">
+                        <img src="images/watch.jpg" alt="">
+                        <div class="product-disc">
+                            <span class="product-name">Men's Wrist Watch</span>
+                        </div>
+                        <div class="price">
+                            <span class="quantity-title">Price:</span><span class="quantity-no">900 LE</span>
+                        </div>
+                        <div class="remove-from-wishlist">
+                            <button class="rfw-button">Remove from wishlist</button>
+                        </div>
+
+                    </div>
+                    <div class="product-wishlist">
+                        <img src="images/short.jpg" alt="">
+                        <div class="product-disc">
+                            <span class="product-name">Coffee Mens Shorts</span>
+                        </div>
+                        <div class="price">
+                            <span class="quantity-title">Price:</span><span class="quantity-no">250 LE</span>
+                        </div>
+                        <div class="remove-from-wishlist">
+                            <button class="rfw-button">Remove from wishlist</button>
+                        </div>
+
+                    </div>
+                    <div class="product-wishlist">
+                        <img src="images/socks.jpg" alt="">
+                        <div class="product-disc">
+                            <span class="product-name">Long Black Socks</span>
+                        </div>
+                        <div class="price">
+                            <span class="quantity-title">Price:</span><span class="quantity-no">80 LE</span>
+                        </div>
+                        <div class="remove-from-wishlist">
+                            <button class="rfw-button">Remove from wishlist</button>
+                        </div>
+
+                    </div>
+                    <div class="product-wishlist">
+                        <img src="images/hoodie.jpg" alt="">
+                        <div class="product-disc">
+                            <span class="product-name">Blue Hoodie</span>
+                        </div>
+                        <div class="price">
+                            <span class="quantity-title">Price:</span><span class="quantity-no">400 LE</span>
+                        </div>
+                        <div class="remove-from-wishlist">
+                            <button class="rfw-button">Remove from wishlist</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+          <div class="box">
+            <h3>Clothing Store</h3>
+            <ul class="social">
+              <li>
+                <a href="#" class="facebook">
+                  <i class="bx bxl-facebook-square social-icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="twitter">
+                  <i class="bx bxl-twitter social-icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="youtube">
+                  <i class="bx bxl-youtube social-icon"></i>
+                </a>
+              </li>
+            </ul>
+            <p class="text">
+              Buy every clothing piece you need and look stylish!
+            </p>
+          </div>
+          <div class="box">
+            <div class="line">
+              <div class="info">
+                Egypt, Giza, Inside The Sphinx, Room Number 220
+              </div>
+            </div>
+            <div class="line">
+              <div class="info">Business Hours: From 10:00 To 18:00</div>
+            </div>
+            <div class="line">
+              <div class="info">
+                <span><b>Call Us:</b></span>
+                <span>+20123456789</span>
+                <span>+20198765432</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">Clothing Store</p>
+      </div>
+      <script src="js/profile.js">
+
+      </script>
+</body>
+</html>
