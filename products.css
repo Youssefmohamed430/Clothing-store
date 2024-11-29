@@ -1,0 +1,304 @@
+body{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#products{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    height: fit-content;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(202, 202, 202);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+/* nav section */
+#products nav{
+    background-color: black;
+    box-shadow: 1px 1px 10px brown  ;
+    width: 95%;
+    padding-inline: 2.5%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#products nav img{
+    height: 80%;
+    width: 5%;
+}
+#products nav img:hover{
+    transition-duration: 400ms;
+    transform: scale(1.05);
+}
+#links{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#links h1{
+  color: gray;
+}
+#links h1:hover{
+  color: brown;
+  cursor: pointer;
+  transform: translate(2px, -2px);
+  transition-duration: 400ms;
+}
+#links h1:not(:hover){
+    transform: translate(0px, 0px);
+    transition-duration: 400ms;
+}
+#search-section{
+  width: 15%;
+}
+#search-section input{
+    padding-left: 6px;
+    background-color: gray;
+    height: 2.5rem;
+    width: 90%;
+    border-radius: 10px 10px;
+    outline: none;
+}
+#search-section input::placeholder{
+  color: black;
+}
+#search-section input:hover{
+    background-color: antiquewhite;
+  border: 2px solid brown;
+  transform: scale(1.1);
+  transition-duration: 400ms;
+}
+#search-section input:not(:hover){
+    transform: scale(1);
+    transition-duration: 400ms;
+}
+/* nav section */
+/* product section */
+.products-content{
+    min-height: 90vh;
+    gap: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+}
+/* footer */
+.footer{
+    position: relative;
+    display: flex;
+    height: 20rem;
+    width: 55%;
+    border: 0.5px groove brown;
+    border-radius: 20px 20px ;
+    box-shadow: 1px 1px 10px black;
+}
+.footer:hover{
+    transition-duration: 400ms;
+    transform: scale(1.01);
+    background-color: antiquewhite;
+    box-shadow: 0 0 20px brown;
+}
+.footer:not(:hover){
+    transition-duration: 400ms;
+    transform: scale(1);
+}
+.footer-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    /* border: 2px solid green; */
+    top: 15%;
+    left: 5%;
+    width: fit-content;
+}
+.footer-text h1{
+    font-size: x-large;
+    font-weight: 800;
+    font-family: cursive;
+}
+.footer-text h1:hover{
+    transition-duration: 400ms;
+    color: brown;
+    cursor: default;
+}
+.hook{
+    align-items: center;
+    justify-content: space-evenly;
+    top: 70%;
+    position: absolute;
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.hook h1{
+    color: brown;
+}
+.hook h1:hover{
+    cursor: default;
+}
+.hook button{
+    outline: none;
+    border-radius: 10px 10px;
+    height: 3.5rem;
+    background-color: gray;
+  }
+.hook button:hover{
+    transition-duration: 400ms;
+    cursor: pointer;
+    background-color: rgb(10, 230, 21);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px black;
+}
+.footer-image{
+    left: 60%;
+    top: 10%;
+    height: 70%;
+    width: fit-content;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.footer-image img{
+    height: 11rem;
+    width: 15rem;
+}
+.footer-image img:hover{
+    transform: scale(1.1);
+    transition-duration: 700ms;
+}
+.footer-image img:not(:hover){
+    transform: scale(1);
+    transition-duration: 300ms;
+}
+.discount{
+    display: flex;
+    height: fit-content;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.discount h3{
+    font-size: xx-large;
+    font-style: italic;
+}
+.discount h3:hover{
+    cursor: default;
+}
+.before-discount{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+.after-discount{
+    color: brown;
+}
+/* footer */
+/* products */
+.products-section{
+    width: 85%;
+    /* border: 10px solid green; */
+    min-height: 85vh;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-auto-rows: auto;
+    gap: 28px; 
+    margin-left: 1.5rem;
+}
+.product-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    height: 31rem;
+    border: 2px groove black;
+    border-radius: 20px 20px;
+    box-shadow: 0 0 10px black;
+}
+.product-container:hover{
+    background-color: rgb(252, 240, 225);
+    box-shadow: 0 0 20px brown;
+    height: 32rem;
+    transition-duration: 400ms;
+    transform: scale(1.1);
+}
+.product-container:not(:hover){
+    transition-duration: 400ms;
+    transform: scale(1);
+}
+.product-title{
+    width: 80%;
+    font-size: clamp(16px, 8vw, 20px); 
+    line-height: 1.2; 
+}
+.product-title:hover{
+    transition-duration: 400ms;
+    transform: scale(1.05);
+    color: brown;
+    cursor: default;
+}
+.product-title:not(:hover){
+    transition-duration: 400ms;
+    transform: scale(1);
+}
+.product-container img{
+    width: 90%;
+    height: 15rem;
+    border-radius: 20px 20px;
+}
+.product-description{
+    width: 75%;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 6; 
+    -webkit-box-orient: vertical; 
+}
+.product-description:hover{
+    color: brown;
+    transform: scale(1.05);
+    transition-duration: 400ms;
+    cursor: default;
+}
+.product-description:not(:hover){
+    transition-duration: 400ms;
+    transform: scale(1);
+}
+.purchase-section{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+}
+.product-price{
+    font-size: x-large;
+} 
+.purchase-section button{
+    outline: none;
+    border-radius: 10px 10px;
+    height: 3rem;
+    background-color: gray;
+  }
+.purchase-section button:hover{
+    transition-duration: 400ms;
+    cursor: pointer;
+    background-color: rgb(10, 230, 21);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px black;
+}
+.purchase-section button:not(:hover){
+    transition-duration: 400ms;
+    transform: scale(1);
+}
+/* products */
+
+
+/* product section */
