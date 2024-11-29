@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-family: system-ui;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: orange;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-25 {
+  flex: 25%;
+}
+
+.col-50 {
+  flex: 50%;
+}
+
+.col-75 {
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  padding: 30px;
+  border: 1px solid silver;
+  border-radius: 3px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 20px;
+}
+
+/****************@ Button ******************/
+#dark-mode-toggle {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  margin: 10px;
+  transition: 0.15s ease;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #555;
+  transform: rotate(5deg);
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.15s;
+}
+
+.btn:hover {
+  background-color: #f5be6b;
+}
