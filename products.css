@@ -209,8 +209,7 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
     grid-auto-rows: auto;
-    gap: 28px; 
-    margin-left: 1.5rem;
+    row-gap: 28px;
 }
 .product-container{
     display: flex;
